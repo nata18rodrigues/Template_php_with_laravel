@@ -35,12 +35,14 @@ class MarcaController extends Controller
         $marca->save();
 
         
-        
+        return redirect("/marca");
     }
 
-    public function excluir()
+    public function excluir($id)
     {
-        return View("Marca.excluir");
+        $marca = Marca::find($id);
+        $marca->delete();
+        return redirect('/marca');
     }
 
     public function alterar($id)
@@ -51,19 +53,17 @@ class MarcaController extends Controller
         return View('Marca.formulario',['marca' => $marca]);
     }
 
-    public function salvar_alterar()
+    public function salvar_alterar(Request $request)
     {
-       $id = $request->input("id");
+       $id = $request->input('id');
        $marca = Marca::find($id);
+       var_dump($id);
 
        $marca->nome             = $request->input("nome");
        $marca->nome_fantasia    = $request->input("nome_fantasia");
        $marca->situacao         = $request->input("situacao");
        $marca->save();
         
-        var_dump($marca);
-
-
         return redirect("/marca");
     }
    

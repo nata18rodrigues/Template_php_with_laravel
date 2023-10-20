@@ -3,37 +3,33 @@
 @section('contents')
 
 @php 
-    //var_dump($marca);
-    $titulo = 'Inclusão de uma nova marca!!!';
-    $endpoint = '/marca/novo';
+    //var_dump($categoria);
+    $titulo = 'Inclusão de uma nova categoria!!!';
+    $endpoint = '/categoria/novo';
     $input_nome = '';
-    $input_fantasia = '';
     $input_id = '';
 
-    if (isset($marca)) {
-        $input_id = $marca['id'];
-        $titulo = 'Alteração de uma nova marca!!!';
-        $endpoint = '/marca/alterar';
-        $input_nome = $marca['nome'];
-        $input_fantasia = $marca['nome_fantasia'];
+    if (isset($categoria)) {
+        $input_id = $categoria['id'];
+        $titulo = 'Alteração de uma nova categoria!!!';
+        $endpoint = '/categoria/alterar';
+        $input_nome = $categoria['nome'];
     }
-@endphp 
+@endphp
+
 
 <h1 class="h3 mb-4 text-gray-800">{{$titulo}}</h1>
 <div class="card">
     <div class="card-header">
-        Criar nova marca
+        Criar nova categoria
     </div>
     <div class="card-body">
         <form method="post" action={{$endpoint}}>
             @CSRF
             <input type="hidden" name='id' value={{$input_id}} />
 
-            <label for="exampleDataList" class="form-label">Nome da marca</label>
+            <label for="exampleDataList" class="form-label">Nome da categoria</label>
             <input class="form-control" name="nome" placeholder="Philips" value={{$input_nome}}>
-
-            <label for="exampleDataList" class="form-label">Nome Fantasia</label>
-            <input class="form-control" name="nome_fantasia" placeholder="LG" value={{$input_fantasia}}>
 
             <label for="exampleDataList" class="form-label">Situação</label>
             <select class="form-control" name="situacao" >

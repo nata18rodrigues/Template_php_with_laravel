@@ -65,11 +65,17 @@
                     <span>Orçamentos</span></a>
             </li>
             -->
-            <!--<li class="nav-item">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item">
+                <a class="nav-link" href="/produto">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Produtos</span></a>
-            </li> -->
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/cor">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Cores</span></a>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="/marca">

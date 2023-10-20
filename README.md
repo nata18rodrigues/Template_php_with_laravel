@@ -1,3 +1,46 @@
+Categoria 
+index               ok
+get  novo           ok
+post novo           ok
+get  alterar/id     ok
+post  alterar       ok
+delete excluir      ok
+
+marca
+get  index          ok 
+get  novo           ok
+post novo           ok
+get  alterar/id     ok
+post  alterar       ok
+delete excluir      ok
+
+
+cores
+get  index          
+get  novo           
+post novo           
+get  alterar/id     
+post  alterar       
+delete excluir      
+
+Produto (sem relacionamento)
+get  index          ok 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+########################################
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
