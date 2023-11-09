@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MarcaController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ProdutoController;
-use App\Http\Controllers\CorController;
+//use App\Http\Controllers\CorController;
 
 
 Route::group(['prefix'=>'marca'], function() {

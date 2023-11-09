@@ -15,15 +15,10 @@ post  alterar       ok
 delete excluir      ok
 
 
-cores
-get  index          
-get  novo           
-post novo           
-get  alterar/id     
-post  alterar       
-delete excluir      
+cores apagar        ok
+    
 
-Produto (sem relacionamento)
+Produto (sem relacionamento) finalizar tudo
 get  index          ok 
 
 

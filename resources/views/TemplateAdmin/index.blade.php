@@ -71,11 +71,7 @@
                     <span>Produtos</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/cor">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Cores</span></a>
-            </li>
+
 
             <li class="nav-item">
                 <a class="nav-link" href="/marca">
@@ -87,19 +83,7 @@
                 <a class="nav-link" href="/categoria">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Categorias</span></a>
-            </li>            
-
-            <!--<li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Cores</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Usuários</span></a>
-            </li>   -->         
+            </li>                    
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">

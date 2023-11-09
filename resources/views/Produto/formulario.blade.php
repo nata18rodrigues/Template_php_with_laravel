@@ -28,7 +28,20 @@
             <label for="exampleDataList" class="form-label">Nome do Produto</label>
             <input class="form-control" name="nome" placeholder="Furadeira" value={{$input_nome}}>
 
+            <label for="exampleDataList" class="form-label">Categoria</label>
+            <input class="form-control" name="nome" placeholder="Ferramentass" value={{$input_nome}}>
 
+            <label for="exampleDataList" class="form-label">Marca</label>
+            <input class="form-control" name="nome" placeholder="Philips" value={{$input_nome}}>
+
+
+            <label for="exampleDataList" class="form-label">Preço</label>
+            <input class="form-control" name="nome" placeholder="Philips" value={{$input_nome}}>
+
+            <label for="exampleDataList" class="form-label">Quantidade</label>
+            <input class="form-control" name="nome" placeholder="Philips" value={{$input_nome}}>
+
+            
 
             <br>
 
