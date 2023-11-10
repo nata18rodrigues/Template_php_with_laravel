@@ -2,7 +2,17 @@
 
 @section('contents')
 @php 
-    var_dump($produtos);
+    //var_dump($produtos);
+
+
+    $teste1 = array_filter($categoria, function ($item) {
+            return $item["id"] === 1;
+        })[0];
+
+  
+   // var_dump($teste1)
+
+
 @endphp 
 
 <h1 class="h3 mb-4 text-gray-800">Produtos</h1>
@@ -19,10 +29,13 @@
             <thead>
                 <td>ID</td>
                 <td>Nome</td>
-                <td>Marca</td>
                 <td>Categoria</td>
-                <td>Situação</td>
-                <td>Opções</td>
+                <td>Marca</td>
+                <td>Preco</td>
+                <td>Quantidade</td>
+                <td>Descrição</td>
+
+
             </thead>
      
                 <tbody>
@@ -31,14 +44,17 @@
                         <td>{{ $linha['id'] }}</td>
                         <td>{{ $linha['nome'] }}</td>
 
+                        <td> {{ $linha['id_categoria'] }}</td>
+
+                        <td>{{ $linha['id_marca'] }}</td>
                         <td>{{ $linha['preco'] }}</td>
                         <td>{{ $linha['quantidade'] }}</td>
                         <td>{{ $linha['descricao'] }}</td>
                         <td>
-                            <a href="/marca/alterar/{{$linha['id']}}" class="btn btn-success">
+                            <a href="/produto/alterar/{{$linha['id']}}" class="btn btn-success">
                                 <li class="fa fa-edit"></li>
                             </a>
-                            <a href="/marca/excluir/{{$linha['id']}}" class="btn btn-danger">
+                            <a href="/produto/excluir/{{$linha['id']}}" class="btn btn-danger">
                                 <li class="fa fa-trash"></li>
                             </a>
                         </td>

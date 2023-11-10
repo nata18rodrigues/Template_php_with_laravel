@@ -48,15 +48,25 @@ Route::group(['prefix'=>'produto'], function() {
     Route::get('/', [ProdutoController::class, 'index']);    
     #create
     Route::get('/novo', [ProdutoController::class, 'inserir']);
+    Route::post('/novo',[ProdutoController::class, 'salvar_novo']);
     #update
-    Route::get('/excluir', [ProdutoController::class, 'excluir']);
+    Route::get('/excluir/{id}', [ProdutoController::class, 'excluir']);
     #put
-    Route::get('/update/{id}', [ProdutoController::class, 'alterar']);
+    Route::get('/alterar/{id}', [ProdutoController::class, 'alterar']);
+    Route::post('/alterar',[CategoriaController::class, 'salvar_alterar']);
 });
     
 Route::get('/', function () {
     return View('Produto.index');
 });
+
+
+
+
+
+
+
+
 
 
 Route::group(['prefix'=>'cor'], function() {
